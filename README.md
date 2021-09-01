@@ -1,1 +1,1 @@
-## This is a repositorry to explore hcsshim on windows
+## Explore hcsshim for connectivity between windows containers on windows 
