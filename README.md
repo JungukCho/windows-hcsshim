@@ -91,9 +91,8 @@ ID                 : c047102f-2bb1-4f64-8f30-9ede02f464f1
 
 ## Tested windows docker images
 ```shell
-1.. Compatible containers
-* [Announcing a New Windows Server Container Image Preview
-](https://techcommunity.microsoft.com/t5/containers/announcing-a-new-windows-server-container-image-preview/ba-p/2304897?ranMID=24542&ranEAID=je6NUbpObpQ&ranSiteID=je6NUbpObpQ-7G741ImEBgESfTcCBeFawQ&epi=je6NUbpObpQ-7G741ImEBgESfTcCBeFawQ&irgwc=1&OCID=AID2200057_aff_7593_1243925&tduid=(ir__ms1mv9qee9kfqib1cydiwswhr22xr3pgbcmzyur300)(7593)(1243925)(je6NUbpObpQ-7G741ImEBgESfTcCBeFawQ)()&irclickid=_ms1mv9qee9kfqib1cydiwswhr22xr3pgbcmzyur300)
+1. Compatible containers
+* [Announcing a New Windows Server Container Image Preview](https://techcommunity.microsoft.com/t5/containers/announcing-a-new-windows-server-container-image-preview/ba-p/2304897?ranMID=24542&ranEAID=je6NUbpObpQ&ranSiteID=je6NUbpObpQ-7G741ImEBgESfTcCBeFawQ&epi=je6NUbpObpQ-7G741ImEBgESfTcCBeFawQ&irgwc=1&OCID=AID2200057_aff_7593_1243925&tduid=(ir__ms1mv9qee9kfqib1cydiwswhr22xr3pgbcmzyur300)(7593)(1243925)(je6NUbpObpQ-7G741ImEBgESfTcCBeFawQ)() irclickid=_ms1mv9qee9kfqib1cydiwswhr22xr3pgbcmzyur300)
 * [Nano Server Insider](https://hub.docker.com/_/microsoft-windows-nanoserver-insider)
 * [Windows Server Insider](https://hub.docker.com/_/microsoft-windows-server-insider)
 * [Windows Server Core Insider](https://hub.docker.com/_/microsoft-windows-servercore-insider)
