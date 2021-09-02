@@ -53,47 +53,8 @@ docker exec -it client cmd.exe
 ```shell
 # on powershell
 PS C:\Users\azure> Get-HnsEndpoint
-
-
 ID                 : edffc876-3051-46ec-80b3-820dda20aa14
-Name               : Ethernet
-Version            : 64424509440
-AdditionalParams   :
-Resources          : @{AdditionalParams=; AllocationOrder=3; Allocators=System.Object[]; CompartmentOperationTime=0; Flags=0;
-                     Health=; ID=78E66F4E-E634-414C-B26B-3FCC84A4A7B2; PortOperationTime=0; State=1; SwitchOperationTime=0;
-                     VfpOperationTime=0; parentId=5CA27F17-3705-4BE7-8F3B-963E16533E12}
-State              : 2
-VirtualNetwork     : 625d8985-3f12-469e-a98d-2baac83dee45
-VirtualNetworkName : nat
-MacAddress         : 00-15-5D-90-AD-7C
-EnableInternalDNS  : True
-IPAddress          : 172.19.6.74
-PrefixLength       : 20
-GatewayAddress     : 172.19.0.1
-IPSubnetId         : 35f30e75-364d-4e6d-a459-4ccdce1077e7
-DNSServerList      : 172.19.0.1,168.63.129.16
-DNSSuffix          : uuz1fvwpe0zejibongrs2s5cjg.bx.internal.cloudapp.net
-SharedContainers   : {49c836b9725e69736157468f33b2a41b0753609c5d49565b46fb37505a5a3b9f}
-
 ID                 : c047102f-2bb1-4f64-8f30-9ede02f464f1
-Name               : Ethernet
-Version            : 64424509440
-AdditionalParams   :
-Resources          : @{AdditionalParams=; AllocationOrder=3; Allocators=System.Object[]; CompartmentOperationTime=0; Flags=0;
-                     Health=; ID=4C355094-4C39-4B90-9A7E-D3D71BAD6CA5; PortOperationTime=0; State=1; SwitchOperationTime=0;
-                     VfpOperationTime=0; parentId=5CA27F17-3705-4BE7-8F3B-963E16533E12}
-State              : 2
-VirtualNetwork     : 625d8985-3f12-469e-a98d-2baac83dee45
-VirtualNetworkName : nat
-MacAddress         : 00-15-5D-90-AD-B2
-EnableInternalDNS  : True
-IPAddress          : 172.19.3.166
-PrefixLength       : 20
-GatewayAddress     : 172.19.0.1
-IPSubnetId         : 35f30e75-364d-4e6d-a459-4ccdce1077e7
-DNSServerList      : 172.19.0.1,168.63.129.16
-DNSSuffix          : uuz1fvwpe0zejibongrs2s5cjg.bx.internal.cloudapp.net
-SharedContainers   : {49e8cbcc30485056cc3e95a6d39f432a8ec2dda522efaaabb2f8dd513b7a5f9c}
 ```
 
 
@@ -113,89 +74,19 @@ go build -o hns main.go
 # After block traffic
 PS C:\k\debug> Get-HnsEndpoint
 ID                 : edffc876-3051-46ec-80b3-820dda20aa14
-Name               : Ethernet
-Version            : 64424509440
-AdditionalParams   :
-Resources          : @{AdditionalParams=; AllocationOrder=6; Allocators=System.Object[]; CompartmentOperationTime=0; Flags=0; Health=; ID=78E66F4E-E634-414C-B26B-3FCC84A4A7B2;
-                     PortOperationTime=0; State=1; SwitchOperationTime=0; VfpOperationTime=0; parentId=5CA27F17-3705-4BE7-8F3B-963E16533E12}
-State              : 2
-VirtualNetwork     : 625d8985-3f12-469e-a98d-2baac83dee45
-VirtualNetworkName : nat
 Policies           : {@{Action=Block; Direction=In; LocalAddresses=172.19.6.74; LocalPorts=80; Priority=100; Protocols=6; Scope=0; Type=ACL}, @{Action=Block; Direction=Out;
                      Priority=100; Protocols=6; Scope=0; Type=ACL}, @{Action=Block; Direction=In; LocalAddresses=172.19.6.74; LocalPorts=80; Priority=100; Protocols=6; Scope=0;
                      Type=ACL}, @{Action=Block; Direction=Out; Priority=100; Protocols=6; Scope=0; Type=ACL}}
-MacAddress         : 00-15-5D-90-AD-7C
-EnableInternalDNS  : True
-IPAddress          : 172.19.6.74
-PrefixLength       : 20
-GatewayAddress     : 172.19.0.1
-IPSubnetId         : 35f30e75-364d-4e6d-a459-4ccdce1077e7
-DNSServerList      : 172.19.0.1,168.63.129.16
-DNSSuffix          : uuz1fvwpe0zejibongrs2s5cjg.bx.internal.cloudapp.net
-SharedContainers   : {49c836b9725e69736157468f33b2a41b0753609c5d49565b46fb37505a5a3b9f}
 
 ID                 : c047102f-2bb1-4f64-8f30-9ede02f464f1
-Name               : Ethernet
-Version            : 64424509440
-AdditionalParams   :
-Resources          : @{AdditionalParams=; AllocationOrder=3; Allocators=System.Object[]; CompartmentOperationTime=0; Flags=0; Health=; ID=4C355094-4C39-4B90-9A7E-D3D71BAD6CA5;
-                     PortOperationTime=0; State=1; SwitchOperationTime=0; VfpOperationTime=0; parentId=5CA27F17-3705-4BE7-8F3B-963E16533E12}
-State              : 2
-VirtualNetwork     : 625d8985-3f12-469e-a98d-2baac83dee45
-VirtualNetworkName : nat
-MacAddress         : 00-15-5D-90-AD-B2
-EnableInternalDNS  : True
-IPAddress          : 172.19.3.166
-PrefixLength       : 20
-GatewayAddress     : 172.19.0.1
-IPSubnetId         : 35f30e75-364d-4e6d-a459-4ccdce1077e7
-DNSServerList      : 172.19.0.1,168.63.129.16
-DNSSuffix          : uuz1fvwpe0zejibongrs2s5cjg.bx.internal.cloudapp.net
-SharedContainers   : {49e8cbcc30485056cc3e95a6d39f432a8ec2dda522efaaabb2f8dd513b7a5f9c}
-
 
 # After allow traffic
 PS C:\k\debug> Get-HnsEndpoint
 ID                 : edffc876-3051-46ec-80b3-820dda20aa14
-Name               : Ethernet
-Version            : 64424509440
-AdditionalParams   :
-Resources          : @{AdditionalParams=; AllocationOrder=7; Allocators=System.Object[]; CompartmentOperationTime=0; Flags=0; Health=; ID=78E66F4E-E634-414C-B26B-3FCC84A4A7B2;
-                     PortOperationTime=0; State=1; SwitchOperationTime=0; VfpOperationTime=0; parentId=5CA27F17-3705-4BE7-8F3B-963E16533E12}
-State              : 2
-VirtualNetwork     : 625d8985-3f12-469e-a98d-2baac83dee45
-VirtualNetworkName : nat
 Policies           : {@{Action=Allow; Direction=In; LocalAddresses=172.19.6.74; LocalPorts=80; Priority=100; Protocols=6; Scope=0; Type=ACL}, @{Action=Allow; Direction=Out;
                      Priority=100; Protocols=6; Scope=0; Type=ACL}}
-MacAddress         : 00-15-5D-90-AD-7C
-EnableInternalDNS  : True
-IPAddress          : 172.19.6.74
-PrefixLength       : 20
-GatewayAddress     : 172.19.0.1
-IPSubnetId         : 35f30e75-364d-4e6d-a459-4ccdce1077e7
-DNSServerList      : 172.19.0.1,168.63.129.16
-DNSSuffix          : uuz1fvwpe0zejibongrs2s5cjg.bx.internal.cloudapp.net
-SharedContainers   : {49c836b9725e69736157468f33b2a41b0753609c5d49565b46fb37505a5a3b9f}
 
 ID                 : c047102f-2bb1-4f64-8f30-9ede02f464f1
-Name               : Ethernet
-Version            : 64424509440
-AdditionalParams   :
-Resources          : @{AdditionalParams=; AllocationOrder=3; Allocators=System.Object[]; CompartmentOperationTime=0; Flags=0; Health=; ID=4C355094-4C39-4B90-9A7E-D3D71BAD6CA5;
-                     PortOperationTime=0; State=1; SwitchOperationTime=0; VfpOperationTime=0; parentId=5CA27F17-3705-4BE7-8F3B-963E16533E12}
-State              : 2
-VirtualNetwork     : 625d8985-3f12-469e-a98d-2baac83dee45
-VirtualNetworkName : nat
-MacAddress         : 00-15-5D-90-AD-B2
-EnableInternalDNS  : True
-IPAddress          : 172.19.3.166
-PrefixLength       : 20
-GatewayAddress     : 172.19.0.1
-IPSubnetId         : 35f30e75-364d-4e6d-a459-4ccdce1077e7
-DNSServerList      : 172.19.0.1,168.63.129.16
-DNSSuffix          : uuz1fvwpe0zejibongrs2s5cjg.bx.internal.cloudapp.net
-SharedContainers   : {49e8cbcc30485056cc3e95a6d39f432a8ec2dda522efaaabb2f8dd513b7a5f9c}
-
 ```
 
 ## Tested windows docker images
