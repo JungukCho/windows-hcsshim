@@ -71,7 +71,7 @@ go build -o hns main.go
   - nginx endpoint id : `edffc876-3051-46ec-80b3-820dda20aa14`
   - client endpoint id : `c047102f-2bb1-4f64-8f30-9ede02f464f1`
 ```shell
-# After block traffic
+# After blocking traffic
 PS C:\k\debug> Get-HnsEndpoint
 ID                 : edffc876-3051-46ec-80b3-820dda20aa14
 Policies           : {@{Action=Block; Direction=In; LocalAddresses=172.19.6.74; LocalPorts=80; Priority=100; Protocols=6; Scope=0; Type=ACL}, @{Action=Block; Direction=Out;
@@ -80,7 +80,7 @@ Policies           : {@{Action=Block; Direction=In; LocalAddresses=172.19.6.74; 
 
 ID                 : c047102f-2bb1-4f64-8f30-9ede02f464f1
 
-# After allow traffic
+# After allowing traffic
 PS C:\k\debug> Get-HnsEndpoint
 ID                 : edffc876-3051-46ec-80b3-820dda20aa14
 Policies           : {@{Action=Allow; Direction=In; LocalAddresses=172.19.6.74; LocalPorts=80; Priority=100; Protocols=6; Scope=0; Type=ACL}, @{Action=Allow; Direction=Out;
